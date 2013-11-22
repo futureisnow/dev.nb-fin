@@ -1,28 +1,31 @@
 //* theme style specific variables *//
 
 // headline font
-$headline-font: "chaparral-pro", Helvetica, sans-serif;
+$headline-font: "PAGRevolucion", sans-serif;
 
 // main font
-$font: "proxima-nova", sans-serif;
+$font: "adelle", Georgia, serif;
 
-// orange
-$theme-color-1: #b85812;
+// aqua for hyperlinks
+$theme-color-1: #0F95AD;
 
-// off white orange
-$theme-color-2: #e0d6c8;
+// white for backgrounds
+$theme-color-2: #FFFFFF;
 
-// light green
+// light green  (From Aware)
 $theme-color-3: #7ba329;
 
-// dark green
-$theme-color-4: #516e16;
+// dark blue
+$theme-color-4: #403F48;
 
-// general success and error colors
+// form input area focus color (From Aware)
+$theme-color-5: rgba(123,163,41,.6);
+
+// general success and error colors  (From Aware)
 $red: #b94a48;
 $green: #619114;
 
 // background images
-
-$background-texture: "paper.jpg";
-$header-texture: "header-green.jpg";
+$background-texture: "paper.jpg"; // (From Aware)
+$header-texture: "header-green.jpg"; // (From Aware)
+$header-color: #C3C6C1;
