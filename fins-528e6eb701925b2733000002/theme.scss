@@ -318,16 +318,17 @@ header {
 .site-logo {
   header {
     margin-top: 8px;
-    background: url("FIN-web-logo-2x.png") no-repeat scroll 0 0 / 97px 97px rgba(0, 0, 0, 0);
+//    background: url("FIN-web-logo-2x.png") no-repeat scroll 0 0 / 97px 97px rgba(0, 0, 0, 0);
     display: block;
-    float: right;
     text-align: left;
+    font-size: 20px;
+    line-height: 22px;
     padding: 0;
     height: 97px;
     max-height: 97px;
     width: 97px;
     max-width: 97px;
-    text-indent: -9999px;
+//    text-indent: -9999px;
     position: absolute;
     z-index: 999;
     right: 5%;
@@ -388,6 +389,7 @@ nav {
 
 .twocolumn-container {
   margin-top: 0px;
+  padding-top: 26px;
   clear: both;
   .left-column, .right-column-wide {
     background-color: #fff;
