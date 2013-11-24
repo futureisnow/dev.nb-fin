@@ -3,8 +3,8 @@
    For changes to the desktop or tablet viewports, see tablet-and-desktop.scss.
    ============================================================================ */
 
-//* style variables *//
 
+//* style variables *//
 @import "variables";
 
 
@@ -64,6 +64,10 @@ input,
 select,
 textarea {
   color: #222;
+}
+
+html {
+  border-top: 5px solid #403F48;
 }
 
 // headlines
@@ -305,26 +309,25 @@ iframe[src *= 'youtube'] {
 
 header {
   float: left;
-  padding: 28px 0 0 0;
+  padding: 15px 0 0 0;
   max-width: 78%;
 }
 
-// if the site has a logo, center it it above content in mobile view
+// if the site has a logo, center it above content in mobile view
 
 .site-logo {
-  margin-top: 25px;
+  margin-top: 10px;
   a {
-    float: left;
+    float: right;
   }
   header {
     float: none;
     text-align: center;
     padding: 0;
     max-width: 100%;
-    margin-left: -38px; // sets logo to true center
     img {
-      max-width: 200px;
-      max-height: 100px;
+      max-width: 97px;
+      max-height: 97px;
     }
   }
 }
@@ -342,6 +345,10 @@ header.splash {
     text-align: center;
     margin-left: 0;
     max-width: 100%;
+    img {
+      max-width: 160px;
+      max-height: 160px;
+    }
   }
 }
 
@@ -379,6 +386,7 @@ nav {
 
 .twocolumn-container {
   margin-top: 0px;
+  clear: both;
   .left-column, .right-column-wide {
     background-color: #fff;
     padding: 20px;
@@ -760,9 +768,9 @@ ul#page-stream {
 // container for entire header area
 
 .header-container {
-  padding-bottom: 40px;
-  min-height: 140px;
-  background: /* url($header-texture) repeat-x */ $header-color;
+  height: 83px;
+  background: $header-color;
+  border-bottom: 1px solid #B4B7B1;
 }
 
 // site wide footer

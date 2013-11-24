@@ -13,6 +13,7 @@
   <title>{{ page_title }}</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="pag.css" type="text/css">
   <link rel="stylesheet" href="theme.scss" type="text/css">
   <link rel="stylesheet" href="tablet-and-desktop.scss" type="text/css" media="screen and (min-width: 768px)">
 
@@ -45,6 +46,9 @@
 
             {% if site.has_meta_image? %}
               <div class="site-logo">
+                <header>
+                  <h1><a href="/" title="Future is Now" rel="home">Future is Now</a></h1>
+                </header>
                 <header><a href="/"><img src="{{ site.meta_image_url }}"></a></header>
               </div>
             {% else %}
