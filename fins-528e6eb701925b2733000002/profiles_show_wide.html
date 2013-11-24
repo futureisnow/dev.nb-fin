@@ -3,9 +3,9 @@
   <div class="left-column">
 
     {% if profile.profile_headline.size > 0 %}
-    <h2 class="headline">{{ profile.profile_headline }}</h2>
+    <h1 class="headline">{{ profile.profile_headline }}</h2>
     {% else %}
-    <h2 class="headline">{{ profile.published_name }}</h2>
+    <h1 class="headline">{{ profile.published_name }}</h2>
     {% endif %}
 
     {% if profile.profile_content.size > 0 %}

@@ -55,7 +55,6 @@
 header {
   max-width: 27.875243664717%;
   // 286px ÷ 1140px
-  float: left;
   padding: 35px 0 20px 30px;
 }
 
@@ -63,7 +62,6 @@ header {
 
 .site-logo {
   header, header.splash {
-    background: url("FIN-web-logo-2x.png") no-repeat scroll 0 0 / 160px 160px rgba(0, 0, 0, 0);
     left: 50%;
     right: auto;
     margin-top: 10px;

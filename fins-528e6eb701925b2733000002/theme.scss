@@ -72,8 +72,16 @@ html {
 
 // headlines
 
-h1, h2, h3, h4, h5, h6 {
+h1, header {
   font-family: $headline-font;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: $font;
+  font-weight: bold;
   margin: 0;
   padding: 0;
 }
@@ -318,7 +326,6 @@ header {
 .site-logo {
   header {
     margin-top: 8px;
-//    background: url("FIN-web-logo-2x.png") no-repeat scroll 0 0 / 97px 97px rgba(0, 0, 0, 0);
     display: block;
     text-align: left;
     font-size: 20px;
@@ -328,7 +335,6 @@ header {
     max-height: 97px;
     width: 97px;
     max-width: 97px;
-//    text-indent: -9999px;
     position: absolute;
     z-index: 999;
     right: 5%;
