@@ -59,19 +59,23 @@ header {
   padding: 35px 0 20px 30px;
 }
 
-// if the site has a logo, center it it above content in mobile view
+// if the site has a logo
 
 .site-logo {
   header, header.splash {
+    background: url("FIN-web-logo-2x.png") no-repeat scroll 0 0 / 160px 160px rgba(0, 0, 0, 0);
+    left: 50%;
+    right: auto;
+    margin-top: 10px;
+    margin-left: -80px;
+    top: 12px;
     float: left;
-    text-align: left;
     padding: 0 0 20px 0;
-    max-width: 27.875243664717%;
+    height: 160px;
+    max-height: 160px;
+    width: 160px;
+    max-width: 160px;
     margin-left: 0;
-    img {
-      max-width: 160px;
-      max-height: 160px;
-    }
   }
 }
 

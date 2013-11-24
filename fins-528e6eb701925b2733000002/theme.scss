@@ -316,19 +316,21 @@ header {
 // if the site has a logo, center it above content in mobile view
 
 .site-logo {
-  margin-top: 10px;
-  a {
-    float: right;
-  }
   header {
-    float: none;
-    text-align: center;
+    margin-top: 8px;
+    background: url("FIN-web-logo-2x.png") no-repeat scroll 0 0 / 97px 97px rgba(0, 0, 0, 0);
+    display: block;
+    float: right;
+    text-align: left;
     padding: 0;
-    max-width: 100%;
-    img {
-      max-width: 97px;
-      max-height: 97px;
-    }
+    height: 97px;
+    max-height: 97px;
+    width: 97px;
+    max-width: 97px;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 999;
+    right: 5%;
   }
 }
 
@@ -364,7 +366,7 @@ header.splash {
   float: left;
   display: block;
   padding: 10px;
-  margin: 25px 20px 0 0;
+  margin: 20.5px 20px 0 0;
 }
 
 .menu-link {
@@ -403,8 +405,6 @@ nav {
 .onecolumn-container {
   background-color: #fff;
   padding: 20px;
-  @include border-radius(5px);
-  border: 1px solid #ebebeb;
   margin-top: -30px;
   margin-bottom: 20px;
 }
