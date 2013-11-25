@@ -20,35 +20,6 @@
 //mobile nav
 @import "mobile-nav";
 
-// page layout if the sidebar is turned on
-
-.twocolumn-container {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  .left-column, .right-column-wide {
-    background-color: #fff;
-    padding: 20px 20px 0 0;
-    float: left;
-    width: 68.2261208577%;
-    // 710px ÷ 1026px
-    margin-right: 1.559454191033%;
-    // 16px ÷ 1026px
-    margin-bottom: 0;
-  }
-  .right-column, .left-column-narrow {
-    float: left;
-    width: 30.214424951267%;
-    // 310px ÷ 1026px
-    margin-bottom: 0;
-  }
-  .right-column-wide {
-    margin-right: 0;
-  }
-  .left-column-narrow {
-    margin-right: 1.559454191033%;
-    // 16px ÷ 1026px
-  }
-}
 
 // wraps your site name or site logo
 
@@ -81,6 +52,44 @@ header {
 .header-container {
   height: 138px;
 }
+
+// page layout if the sidebar is turned on
+
+.twocolumn-container {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 26px;
+  .left-column, .right-column-wide {
+    background-color: #fff;
+    padding: 20px 20px 0 0;
+    float: left;
+    width: 68.2261208577%;
+    // 710px ÷ 1026px
+    margin-right: 1.559454191033%;
+    // 16px ÷ 1026px
+    margin-bottom: 0;
+  }
+  .right-column, .left-column-narrow {
+    float: left;
+    width: 30.214424951267%;
+    // 310px ÷ 1026px
+    margin-bottom: 0;
+  }
+  .right-column-wide {
+    margin-right: 0;
+  }
+  .left-column-narrow {
+    margin-right: 1.559454191033%;
+    // 16px ÷ 1026px
+  }
+}
+
+// page layout if the sidebar is turned off
+
+.onecolumn-container {
+  padding-top: 46px;
+}
+
 
 // site wide footer
 

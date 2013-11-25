@@ -318,7 +318,6 @@ iframe[src *= 'youtube'] {
 header {
   float: left;
   padding: 15px 0 0 0;
-  max-width: 78%;
 }
 
 // if the site has a logo, center it above content in mobile view
@@ -326,18 +325,16 @@ header {
 .site-logo {
   header {
     margin-top: 8px;
-    display: block;
     text-align: left;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 20px;
     padding: 0;
-    height: 97px;
-    max-height: 97px;
-    width: 97px;
-    max-width: 97px;
-    position: absolute;
-    z-index: 999;
-    right: 5%;
+    height: 105px;
+    width: 105px;
+    float: right;
+    a {
+      color: #fff;
+    }
   }
 }
 
@@ -395,11 +392,9 @@ nav {
 
 .twocolumn-container {
   margin-top: 0px;
-  padding-top: 26px;
   clear: both;
   .left-column, .right-column-wide {
     background-color: #fff;
-    padding: 20px;
     border: none;
     margin-bottom: 15px;
   }
@@ -412,7 +407,6 @@ nav {
 
 .onecolumn-container {
   background-color: #fff;
-  padding-top: 46px;
   clear: both;
   margin-top: 0px;
   margin-bottom: 20px;
