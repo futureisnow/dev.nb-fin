@@ -25,19 +25,13 @@
 
 .site-logo {
   header, header.splash {
-    left: 50%;
+    left: 0;
     right: auto;
-    margin-top: 10px;
-    margin-left: -80px;
-    top: 12px;
+    top: 22px;
     font-size: 32px;
     line-height: 36px;
-    padding: 0 0 20px 0;
     height: 160px;
-    max-height: 160px;
     width: 160px;
-    max-width: 160px;
-    margin-left: 0;
   }
 }
 

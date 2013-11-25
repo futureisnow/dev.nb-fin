@@ -317,15 +317,19 @@ iframe[src *= 'youtube'] {
 // if the site has a logo, center it above content in mobile view
 
 .site-logo {
+  position: relative;
   header {
-    margin-top: 8px;
+    position: absolute;
+    top: 8px;
+    right: 0;
     text-align: left;
     font-size: 20px;
     line-height: 20px;
     padding: 0;
     height: 105px;
     width: 105px;
-    float: right;
+    float: none;
+    z-index: 999;
     a {
       color: #fff;
     }
@@ -391,6 +395,7 @@ nav {
     background-color: #fff;
     border: none;
     margin-bottom: 15px;
+    padding-top: 22px;
   }
   .right-column, .left-column-narrow {
     margin-bottom: 15px;
@@ -402,8 +407,8 @@ nav {
 .onecolumn-container {
   background-color: #fff;
   clear: both;
-  margin-top: 0px;
   margin-bottom: 20px;
+  padding-top: 22px;
 }
 
 // supporter photo shown in supporter nav and user profile
