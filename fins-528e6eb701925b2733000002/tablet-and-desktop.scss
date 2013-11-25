@@ -21,14 +21,6 @@
 @import "mobile-nav";
 
 
-// wraps your site name or site logo
-
-header {
-  max-width: 27.875243664717%;
-  // 286px ÷ 1140px
-  padding: 35px 0 20px 30px;
-}
-
 // if the site has a logo
 
 .site-logo {
@@ -547,10 +539,6 @@ ul#page-stream {
     display: block;
   }
 
-  header {
-    padding: 15px 0 0 0;
-    max-width: 78%;
-  }
 
 // replaces the subnav with breadcrumbs, as dropdowns don't work in touch devices
 
