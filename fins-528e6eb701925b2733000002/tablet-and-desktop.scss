@@ -25,9 +25,9 @@
 
 .site-logo {
   header, header.splash {
-    left: 0;
+    left: 42px;
     right: auto;
-    top: 22px;
+    top: 12px;
     font-size: 32px;
     line-height: 36px;
     height: 160px;
@@ -148,11 +148,8 @@ nav, .subnav {
   border-top: 0;
   float: left;
   height: auto;
-  max-width: 68.2261208577%;
-  margin-top: 25px;
-  // 700px ÷ 1026px
-  margin-left: 1.949317738791%;
-  // 20px ÷ 1026px
+  margin-top: 75px;
+  margin-left: 223px;
   position: static;
   width: auto;
   font-family: "PAGRevolucion";
@@ -165,18 +162,20 @@ nav, .subnav {
   }
   li {
     display: inline-block;
-    margin: 0 10px 10px 0;
+    margin: 0 6px;
     position: relative;
     background-color: inherit;
     border: none;
-    line-height: 55px;
+    line-height: 1.4em;
     font-size: 28px;
+    letter-spacing: 1px;
     a {
       display: block;
       width: 100%;
       height: 100%;
       color: $theme-color-2;
       padding: 0 15px;
+      text-shadow: 0 1px #999999;
     }
     &:last-child {
       margin-right: 0;
