@@ -321,13 +321,14 @@ iframe[src *= 'youtube'] {
   header {
     position: absolute;
     top: 8px;
-    right: 0;
+    margin-left: -48.5px;
+    left: 50%;
     text-align: left;
     font-size: 20px;
     line-height: 20px;
     padding: 0;
-    height: 105px;
-    width: 105px;
+    height: 97px;
+    width: 97px;
     float: none;
     z-index: 999;
     a {

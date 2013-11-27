@@ -26,7 +26,6 @@
 .site-logo {
   header, header.splash {
     left: 42px;
-    right: auto;
     top: 12px;
     font-size: 32px;
     line-height: 36px;
@@ -159,6 +158,7 @@ nav, .subnav {
     padding: 0;
     clear: both;
     list-style: none;
+    text-align: center;
   }
   li {
     display: inline-block;
