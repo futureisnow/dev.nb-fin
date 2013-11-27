@@ -156,7 +156,7 @@ img {
 }
 
 body {
-  background: url($background-texture) repeat $theme-color-2;
+  background: /* url($background-texture) repeat */ $theme-color-2;
   margin: 0;
   font: 15px/21px $font;
   color: #5A5A60;
@@ -778,11 +778,23 @@ ul#page-stream {
 
 // site wide footer
 
+.footer-container {
+  color: #e7e6de;
+  background: #888a86;
+  font-family: "depot-new-condensed-web";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 15px 0;
+}
+
 footer {
-  background-color: #fff;
   padding: 20px;
-  @include border-radius(5px);
-  border: 1px solid #ebebeb;
+  a {
+    color: #e7e6de !important;
+    border-bottom: 1px solid #e7e6de;
+  }
   .footer-text p {
     margin: 0;
   }
