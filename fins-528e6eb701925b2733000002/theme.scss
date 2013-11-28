@@ -387,6 +387,12 @@ nav {
   @include mobile-nav;
 }
 
+// main content area
+.main-container {
+  width: 100%;
+  background: $theme-color-2; // white
+}
+
 // page layout if the sidebar is turned on
 
 .twocolumn-container {
@@ -780,8 +786,8 @@ ul#page-stream {
 
 .footer-container {
   color: #e7e6de;
-  background: #888a86;
-  font-family: "depot-new-condensed-web";
+  background: $theme-color-3;
+  font-family: "depot-new-condensed-web", Verdana, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 15px;
@@ -790,13 +796,20 @@ ul#page-stream {
 }
 
 footer {
-  padding: 20px;
+  padding: 17px 0;
   a {
     color: #e7e6de !important;
     border-bottom: 1px solid #e7e6de;
   }
-  .footer-text p {
-    margin: 0;
+  p, ul {
+    margin-bottom: 0;
+  }
+  ul li {
+    display: inline-block;
+    margin-right: 7px;
+  }
+  .foot2, .foot3 {
+    margin-top: 12px;
   }
   .row-fluid [class*="span"] {
     min-height: 0;
@@ -1313,7 +1326,7 @@ ul.membership-list {
 .pattern {
   overflow: hidden;
   & > .wrap {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   }
 }
 
