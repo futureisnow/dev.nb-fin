@@ -87,44 +87,57 @@
         </div>
         <!-- .main-container -->
 
-        <div class="footer-container {% if site.has_background_image? %}no-background{% endif %}">
-          <div class="width-container">
-            <footer class="clearfix">
+        <footer class="{% if site.has_background_image? %}no-background{% endif %} clearfix">
 
-              {{ content_for_footer }}
-
+         <div class="width-container clearfix">
+            <div class="foot1">
               {% if site.footer_content.size > 0 %}
-              <div class="footer-text">{{ site.footer_content }}</div>
-              <hr/>
+              {{ site.footer_content }}
               {% endif %}
-
-              <div class="row-fluid">
-
-                <div class="span7 footer-left">
-                  {% if request.logged_in? %}
-                    Hi <a href="{{ request.current_signup.settings_url }}">{{ request.current_signup.name_or_email }}</a>. View your
-                    {% if site.show_public_profiles? %}
-                      <a href="{{ request.current_signup.profile_url }}">public profile</a>,
-                    {% endif %}
-                    <a href="{{ request.current_signup.settings_url }}">account settings</a>, or
-                    <a href="{{ request.current_signup.logout_url }}">sign out</a>.
-                  {% else %}
-                    Sign in with <a href="{{ request.facebook_connect_url }}">Facebook</a>, <a
-                        href="{{ request.twitter_connect_url }}">Twitter</a> or <a href="/login">email</a>.
-                  {% endif %}
-                </div>
-                <div class="span5 footer-right">
-                  <!-- The NationBuilder link below is required. If it is removed, we may add it back ourselves.
-                       You can style it or move it in different ways, but please leave it in the footer. -->
-                  Created with <a href="http://nationbuilder.com/">NationBuilder</a>
-                </div>
-
-              </div>
-            </footer>
+            </div>
+            <div class="foot2">
+              {% include "nav" %}
+            </div>
+            <div class="foot3">
+              <p><strong>Future Is Now</strong><br /><a href="mailto:info@finschools.org">info@finschools.org</a> <br />(213) 623-5800 <br />626 Wilshire Blvd, Suite 220 <br />Los Angeles, CA 90017</p>
+              <!-- Insert broadcaster info dynamically instead? -->
+            </div>
           </div>
           <!-- .width-container -->
-        </div>
-        <!-- .footer-container -->
+
+          <div class="nblogin-container clearfix">
+            <div class="width-container clearfix">
+
+              <div class="foot1">
+                {% if request.logged_in? %}
+                  Hi <a href="{{ request.current_signup.settings_url }}">{{ request.current_signup.name_or_email }}</a>. View your
+                  {% if site.show_public_profiles? %}
+                    <a href="{{ request.current_signup.profile_url }}">public profile</a>,
+                  {% endif %}
+                  <a href="{{ request.current_signup.settings_url }}">account settings</a>, or
+                  <a href="{{ request.current_signup.logout_url }}">sign out</a>.
+                {% else %}
+                  Sign in with <a href="{{ request.facebook_connect_url }}">Facebook</a>, <a
+                      href="{{ request.twitter_connect_url }}">Twitter</a> or <a href="/login">email</a>.
+                {% endif %}
+              </div>
+              
+              <div class="foot2">Designed by <a href="http://restlessbee.com/">Restless Bee</a>.</div>
+
+              <div class="foot3">
+                <!-- The NationBuilder link below is required. If it is removed, we may add it back ourselves. You can style it or move it in different ways, but please leave it in the footer. -->
+                Created with <a href="http://nationbuilder.com/">NationBuilder</a>.
+              </div>
+
+            </div>
+            <!-- .width-container -->
+          </div>
+          <!-- .nblogin-container -->
+
+         {{ content_for_footer }} 
+         <!-- NB's FB & Quantcast scripts, etc. -->
+
+        </footer>
 
       </div>
       <!-- #body -->

@@ -80,11 +80,7 @@
 // site wide footer
 
 footer {
-  ul li {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 2px;
-  }
+  padding: 17px 0 0;
   .foot1, .foot2, .foot3 {
   float: left;
   }
@@ -93,22 +89,17 @@ footer {
     margin-right: 5%;
     line-height: 157%
   }
- 
  .foot2, .foot3 {
-  width: 23%;
-  margin-top: 0;
- }
- 
- .foot2 {
-  margin-right: 2%;
- }   
-    
-  .footer-right {
+    width: 23%;
     margin-top: 0;
-    text-align: right;
-  }
-  .row-fluid [class*="span"] {
-    min-height: 0;
+ }
+ .foot2 {
+    margin-right: 2%;
+ }   
+ nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 2px;
   }
 }
 

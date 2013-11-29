@@ -12,11 +12,16 @@ $theme-color-1: #0F95AD;
 // white for backgrounds
 $theme-color-2: #FFFFFF;
 
-// paloma for footer
-$theme-color-3: #888A86;
+// neutrals — tans & greys
+$theme-color-3: #888A86; // paloma for footer
+$theme-color-6: #C3C6C1; // putty/gray for header
+$theme-color-9: #B4B7B1; // thin gray border for header-bottom
+$theme-color-10: #e7e6de; // light text in footer
 
-// blue
-$theme-color-4: #465E7E; // dark blue at top: #403F48; dark blue band: #3E536F
+// blues
+$theme-color-4: #465E7E; // bgd for blue callout
+$theme-color-7: #403F48; // dark blue at top of html and nb login bar at bottom
+$theme-color-8: #3E536F; // dark blue band
 
 // form input area focus color (From Aware)
 $theme-color-5: rgba(123,163,41,.6);
@@ -26,6 +31,6 @@ $red: #b94a48;
 $green: #619114;
 
 // background images
-$background-texture: "paper.jpg"; // (From Aware)
+// $background-texture: "paper.jpg";  (From Aware)
 $header-texture: "header-green.jpg"; // (From Aware)
 $header-color: #C3C6C1;
