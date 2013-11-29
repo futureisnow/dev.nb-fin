@@ -82,25 +82,25 @@
 footer {
   padding: 17px 0 0;
   .foot1, .foot2, .foot3 {
-  float: left;
+    float: left;
+  }
+  ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 2px;
   }
   .foot1 {
     width: 47%;
     margin-right: 5%;
     line-height: 157%
   }
- .foot2, .foot3 {
+  .foot2, .foot3 {
     width: 23%;
     margin-top: 0;
  }
- .foot2 {
+  .foot2 {
     margin-right: 2%;
  }   
- nav ul li {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 2px;
-  }
 }
 
 // hides off canvas nav

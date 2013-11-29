@@ -801,6 +801,13 @@ footer {
   }
   p, ul {
     margin: 0;
+    padding: 0;
+  }
+  ul li {
+    display: inline-block;
+    margin-right: 7px;
+    font-size: 15px;
+    font-family: "depot-new-condensed-web", Verdana, sans-serif;
   }
   .foot2, .foot3 {
     margin-top: 12px;
@@ -810,21 +817,10 @@ footer {
     width: 100%;
     padding: 10px 0;
     margin: 15px 0 0;
-    color: $theme-color-10;    
-  }
-  .menu-link {
-    display: none;
-  }
-  nav {
-    float: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav ul li {
-    display: inline-block;
-    margin-right: 7px;
-    font-size: 15px;
-    font-family: "depot-new-condensed-web", Verdana, sans-serif;
+    color: $theme-color-10;
+    .foot3 {
+      margin-top: 0;
+    }
   }
 }
 

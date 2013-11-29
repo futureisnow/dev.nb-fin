@@ -96,7 +96,16 @@
               {% endif %}
             </div>
             <div class="foot2">
-              {% include "nav" %}
+              <ul>
+                <li><a href="/">Home</a></li>
+                
+                {% for child in site.root_nav_pages %}
+                <li {% if child.is_or_is_ancestor_of_current_page? %}class="active"{% endif %}>
+                  <a href="{{ child.url }}">{{ child.name }}</a>
+                </li>
+                {% endfor %}
+
+              </ul>
             </div>
             <div class="foot3">
               <p><strong>Future Is Now</strong><br /><a href="mailto:info@finschools.org">info@finschools.org</a> <br />(213) 623-5800 <br />626 Wilshire Blvd, Suite 220 <br />Los Angeles, CA 90017</p>
