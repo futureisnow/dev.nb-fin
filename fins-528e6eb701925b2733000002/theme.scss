@@ -793,7 +793,7 @@ footer {
   text-align: left;
   font-size: 15px;
   letter-spacing: 1px;
-  padding: 15px 0 0;
+  padding: 0 0 15px;
   width: 100%;
   a {
     color: $theme-color-10 !important;
@@ -810,14 +810,14 @@ footer {
     font-family: "depot-new-condensed-web", Verdana, sans-serif;
   }
   .foot2, .foot3 {
-    margin-top: 12px;
+    margin-top: 15px;
   }
   .nblogin-container {
     background-color: $theme-color-7;
     width: 100%;
     padding: 10px 0;
-    margin: 15px 0 0;
-    color: $theme-color-10;
+    margin: 0 0 15px;
+    color: $theme-color-4;
     .foot3 {
       margin-top: 0;
     }

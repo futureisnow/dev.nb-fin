@@ -89,31 +89,6 @@
 
         <footer class="{% if site.has_background_image? %}no-background{% endif %} clearfix">
 
-         <div class="width-container clearfix">
-            <div class="foot1">
-              {% if site.footer_content.size > 0 %}
-              {{ site.footer_content }}
-              {% endif %}
-            </div>
-            <div class="foot2">
-              <ul>
-                <li><a href="/">Home</a></li>
-                
-                {% for child in site.root_nav_pages %}
-                <li {% if child.is_or_is_ancestor_of_current_page? %}class="active"{% endif %}>
-                  <a href="{{ child.url }}">{{ child.name }}</a>
-                </li>
-                {% endfor %}
-
-              </ul>
-            </div>
-            <div class="foot3">
-              <p><strong>Future Is Now</strong><br /><a href="mailto:info@finschools.org">info@finschools.org</a> <br />(213) 623-5800 <br />626 Wilshire Blvd, Suite 220 <br />Los Angeles, CA 90017</p>
-              <!-- Insert broadcaster info dynamically instead? -->
-            </div>
-          </div>
-          <!-- .width-container -->
-
           <div class="nblogin-container clearfix">
             <div class="width-container clearfix">
 
@@ -142,6 +117,31 @@
             <!-- .width-container -->
           </div>
           <!-- .nblogin-container -->
+
+         <div class="width-container clearfix">
+            <div class="foot1">
+              {% if site.footer_content.size > 0 %}
+              {{ site.footer_content }}
+              {% endif %}
+            </div>
+            <div class="foot2">
+              <ul>
+                <li><a href="/">Home</a></li>
+                
+                {% for child in site.root_nav_pages %}
+                <li {% if child.is_or_is_ancestor_of_current_page? %}class="active"{% endif %}>
+                  <a href="{{ child.url }}">{{ child.name }}</a>
+                </li>
+                {% endfor %}
+
+              </ul>
+            </div>
+            <div class="foot3">
+              <p><strong>Future Is Now</strong><br /><a href="mailto:info@finschools.org">info@finschools.org</a> <br />(213) 623-5800 <br />626 Wilshire Blvd, Suite 220 <br />Los Angeles, CA 90017</p>
+              <!-- Insert broadcaster info dynamically instead? -->
+            </div>
+          </div>
+          <!-- .width-container -->
 
          {{ content_for_footer }} 
          <!-- NB's FB & Quantcast scripts, etc. -->
