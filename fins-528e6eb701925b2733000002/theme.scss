@@ -162,6 +162,91 @@ strong {
 em {
   font-style: italic; }
 
+.main{
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 22px 0 7px;
+    line-height: 110%;
+    color: #71403e;
+  }
+  h3 {
+    font-size: 17px;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 6px; 
+  }
+  p, ul {
+    margin-bottom: 11px;
+    line-height: 145%; 
+  }
+  li {
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 22px;
+    margin-bottom: 3px; 
+  }
+  .sub-intro {
+    font-size: 25px; 
+  }
+  .note { // not sure what this is for
+    font-size: 15px; 
+  }
+  .bigpic {
+    display: inline-block;
+    margin: 8px 0 4px; }
+  .subsection {
+    margin: 18px 0;
+    padding: 20px 22px 18px;
+    background-color: #f5f6f3;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.18); 
+  }
+  .thumb-blurb {
+    width: 100%;
+    margin: 23px 0 0;
+    .thumb-link, .inner-blurb {
+      float: left; 
+    }
+    .thumb-link {
+      width: 35%;
+      margin-right: 2%;
+      margin-top: 2px; 
+    }
+    .inner-blurb {
+      width: 63%; 
+      h2 {
+        margin-top: 0;
+        margin-bottom: 5px; 
+      }
+      a {
+        font-weight: bold; 
+      }
+    }
+  }
+  #staff-list {
+    h3 {
+      margin: 24px 0 3px;
+      font-size: 18px;
+      text-transform: none;
+    }
+    li {
+      list-style-type: none;
+      margin-left: 0;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 16px;
+      &.staff-mail {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+
 // allows embedded images to expand/contract with viewport
 
 img {
