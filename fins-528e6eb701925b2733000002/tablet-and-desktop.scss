@@ -424,19 +424,6 @@ ul.membership-list {
 
 // page specific styles
 
-.page-user-sessions-new-wide, .page-users-accounts-new-wide, .page-users-password-resets-new-wide, .page-users-passwords-new-wide {
-  .onecolumn-container {
-    margin: 0 auto;
-    margin-top: -30px;
-    margin-bottom: 20px;
-    width: 75%;
-  }
-  footer {
-    margin: 0 auto;
-    width: 75%;
-  }
-}
-
 #event_rsvp_guests_count, input.quantity, #signup_donations_to_raise_amount {
   width: 25%;
 }
