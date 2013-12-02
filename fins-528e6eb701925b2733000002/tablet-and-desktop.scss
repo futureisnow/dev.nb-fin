@@ -172,38 +172,38 @@ nav, .subnav {
   width: auto;
   font-family: "PAGRevolucion";
   font-size: 28px;
-  .topnav {
+  #topnav {
     margin: 0;
     padding: 0;
     clear: both;
     list-style: none;
     text-align: center;
-  }
-  li {
-    display: inline-block;
-    margin: 0 6px;
-    position: relative;
-    background-color: inherit;
-    border: none;
-    line-height: 1.4em;
-    font-size: 28px;
-    letter-spacing: 1px;
-    a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      color: $theme-color-2;
-      padding: 0 15px;
-      text-shadow: 0 1px #999999;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-    &:hover, &.active{
-      border-color: transparent;
+    li {
+      display: inline-block;
+      margin: 0 6px;
+      position: relative;
       background-color: inherit;
+      border: none;
+      line-height: 1.4em;
+      font-size: 28px;
+      letter-spacing: 1px;
       a {
-        color: #CEF8FF;
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: $theme-color-2;
+        padding: 0 15px;
+        text-shadow: 0 1px #999999;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover, &.active{
+        border-color: transparent;
+        background-color: inherit;
+        a {
+          color: #CEF8FF;
+        }
       }
     }
   }
