@@ -143,6 +143,19 @@ hr {
   padding: 0;
 }
 
+ol, ul {
+  list-style: none;
+}
+
+p, ul {
+  margin-bottom: 13px; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
 // allows embedded images to expand/contract with viewport
 
 img {
