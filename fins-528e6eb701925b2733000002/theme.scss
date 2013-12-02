@@ -197,6 +197,36 @@ em {
   .bigpic {
     display: inline-block;
     margin: 8px 0 4px; }
+  .callout { // looks like a post-it note
+    float: left;
+    width: 26%;
+    margin-top: 9px;
+    margin-right: 2.5%;
+    margin-bottom: 8px;
+    background-color: #fcfbdb;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    div {
+      padding: 7px 12px 5px; 
+    }
+    h5 {
+      font-family: "depot-new-condensed-web";
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+      text-align: center;
+      padding: 4px 7px;
+      line-height: 1;
+      color: #888;
+      background-color: #fcf9b5; 
+    }
+    a {
+      font-style: italic;
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-block;
+      line-height: 120%; 
+    }
+  }
   .subsection {
     margin: 18px 0;
     padding: 20px 22px 18px;

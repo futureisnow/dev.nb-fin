@@ -35,8 +35,13 @@
   }
 }
 
-#content {
+.main {
   font-size: 18px;
+  .callout {
+    width: 24%;
+    margin-top: 10px;
+    margin-right: 5%; 
+  }
 }
 
 .header-container {
@@ -574,6 +579,13 @@ ul#page-stream {
     margin-left: -27px;
   }
 
+  .main {
+    .callout {
+      width: 20%;
+      margin-top: 11px;
+      margin-right: 4%; 
+    }
+  }
 
   // paid membership options
 
