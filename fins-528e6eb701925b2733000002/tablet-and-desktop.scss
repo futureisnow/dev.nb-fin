@@ -80,7 +80,7 @@
 // site wide footer
 
 footer {
-  padding: 17px 0 0;
+  padding: 0 0 17px;
   .foot1, .foot2, .foot3 {
     float: left;
   }
@@ -390,6 +390,14 @@ ul.membership-list {
   display: block;
   height: 58px;
   font-size: 25px;
+}
+
+// Teacher Action Network signup form
+
+.form-outer {
+  h2 {
+    font-size: 18px; 
+  }
 }
 
 // inline sign in form

@@ -6,14 +6,16 @@ $headline-font: "PAGRevolucion", sans-serif;
 // main font
 $font: "adelle", Georgia, serif;
 
-// aqua for hyperlinks
-$theme-color-1: #0F95AD;
+// aquas
+$theme-color-1: #0F95AD; // hyperlinks
+$theme-color-12: #32B8CE; // bgd for button
+$theme-color-13: #2997A9; // dark bgd for button gradient
 
 // white for backgrounds
 $theme-color-2: #FFFFFF;
 
 // neutrals — tans & greys
-$theme-color-3: #888A86; // paloma for footer
+$theme-color-3: #888A86; // paloma for footer bgd
 $theme-color-6: #C3C6C1; // putty/gray for header
 $theme-color-9: #B4B7B1; // thin gray border for header-bottom
 $theme-color-10: #e7e6de; // light text in footer
@@ -22,6 +24,11 @@ $theme-color-10: #e7e6de; // light text in footer
 $theme-color-4: #465E7E; // bgd for blue callout
 $theme-color-7: #403F48; // dark blue at top of html and nb login bar at bottom
 $theme-color-8: #3E536F; // dark blue band
+$theme-color-14: #486182; // bgd for button:hover
+$theme-color-15: #32435a; // bgd for button:hover dark gradient
+
+// reds
+$theme-color-11: #933d3a; // bgd for email signup, same as hand in logo?
 
 // form input area focus color (From Aware)
 $theme-color-5: rgba(123,163,41,.6);

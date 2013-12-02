@@ -12,14 +12,28 @@
 
 {% else %}
 	
-	<div class="email-signup form">
-  {% form_for signup %}   
-   {% hidden_field_tag "page_id", signup_form.id %} <div class="form-errors">{% error_messages_for signup %}</div>
+<div class="email-signup form">
+	<h2>Teacher Action Network</h2>
+		{% form_for signup %}
+   		    {% hidden_field_tag "page_id", signup_form.id %} <div class="form-errors">{% error_messages_for signup %}</div>
 
-   	{% email_field "email", class:"text", placeholder:"Email address", required: "required" %}{% submit_tag "Join", class:"submit-button" %}
- 	
-	    <div class="form-submit"></div>
-  {% endform_for %}
+<!-- COLLECT OTHER INFO HERE? CUSTOM FIELDS? MAYBE JUST DISTRICT/ZIP -->
+
+		    <div class="input-outer">
+		  	 {% email_field "email", class:"text", placeholder:"Email address", required: "required" %}
+		    </div>
+			{% submit_tag "JOIN THE NETWORK", class:"submit-button" %}
+		    <div class="form-submit"></div>
+		{% endform_for %}
+
+<!-- GIVE THE OPTION TO USE THEIR SOCIAL MEDIA ACCTS 
+    <ul class="supporter-nav">
+      <li><a href="{{ request.facebook_connect_url }}"><i class="icon-facebook-squared"></i> Sign in with Facebook</a>
+      </li>
+      <li><a href="{{ request.twitter_connect_url }}"><i class="icon-twitter-squared"></i> Sign in with Twitter</a></li>
+      <li><a href="/login"><i class="icon-user"></i> Sign in with Email</a></li>
+    </ul>
+-->
 </div>
 
 {% endif %}
