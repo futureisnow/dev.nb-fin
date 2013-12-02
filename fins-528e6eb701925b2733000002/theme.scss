@@ -127,11 +127,17 @@ h6 {
 }
 
 // general link styles
-
 a {
+  outline: 0;
+  @include transition-duration(.3s);
+  @include transition-timing-function(ease-in);
+  &:link, &:visited {
   color: $theme-color-1;
   text-decoration: none;
-  outline: none;
+  }
+  &:hover, &:active {
+    color: $theme-color-16;
+  }
 }
 
 hr {
