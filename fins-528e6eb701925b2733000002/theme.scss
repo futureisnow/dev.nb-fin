@@ -163,12 +163,14 @@ em {
   font-style: italic; }
 
 .main{
-  h2 {
+  h2, .content-pages-show-question h1.headline, .content-pages-show-faq h3 { // treat h1 like h2 on faq question pages
     font-size: 22px;
     font-weight: bold;
     margin: 22px 0 7px;
     line-height: 110%;
     color: #71403e;
+    text-transform: none;
+    font-family: $font;
   }
   h3 {
     font-size: 17px;
@@ -272,6 +274,11 @@ em {
       &.staff-mail {
         margin-bottom: 5px;
       }
+    }
+  }
+  .faq {
+    h3 {
+
     }
   }
 }
@@ -419,7 +426,12 @@ iframe[src *= 'youtube'] {
     display: block;
   }
 }
-// breadcrumbs
+
+// breadcrumbs 
+
+#page-nav {
+  margin-bottom: 30px;
+}
 
 .breadcrumbs {
   padding: 8px 15px;
@@ -431,6 +443,7 @@ iframe[src *= 'youtube'] {
 
 .breadcrumbs > li {
   display: inline-block;
+  margin: 0;
 }
 
 .breadcrumbs > li > .divider {
@@ -719,7 +732,7 @@ nav {
       color: #ffffff;
       font-size: 23px;
       letter-spacing: 1px;
-      padding: 6px 20px 12px 20px;
+      padding: 6px 20px 12px;
       text-decoration: none;
       &:hover {
         background: $theme-color-14;
@@ -1030,6 +1043,7 @@ footer {
     background-color: #fff;
     border: 1px solid #ebebeb;
     margin-bottom: 1px;
+    margin-left: 0;
     i, span {
       color: darken($theme-color-1, 10);
     }
@@ -1659,6 +1673,12 @@ h4.expander-head {
 }
 
 // page specific tweaks
+
+.page-pages-show-question {
+  h1.headline {
+
+  }
+}
 
 .page-profiles-show {
   .left-column {
