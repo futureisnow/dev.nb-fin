@@ -1690,7 +1690,34 @@ h4.expander-head {
   }
 }
 
-// page specific tweaks
+
+// homepage styles
+
+.slug-home {
+  .main {
+    h1.headline {
+      font-family: $font;
+      font-size: 23px;
+      margin-bottom: 24px;
+      line-height: 1.4em;
+      .wordmark {
+        float: left;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-right: 5px;
+        margin-top: 1px; 
+        color: #48484D;
+        display: inline-block;
+        font-family: PAGRevolucion;
+        line-height: 1.4em;
+      }
+    }
+  }
+}
+
+
+
+// other page specific tweaks
 
 .page-pages-show-question {
   h1.headline {

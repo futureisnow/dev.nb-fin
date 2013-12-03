@@ -429,7 +429,24 @@ ul.membership-list {
   padding: 0;
 }
 
-// page specific styles
+
+// homepage styles
+
+.slug-home {
+  .main {
+    h1.headline {
+      font-size: 28px;
+      .wordmark {
+        font-size: 24px;
+        margin-right: 6px;
+        margin-top: 4px;      
+      }
+    }
+  }
+}
+
+
+// other page specific styles
 
 #event_rsvp_guests_count, input.quantity, #signup_donations_to_raise_amount {
   width: 25%;
@@ -568,6 +585,15 @@ ul#page-stream {
 // Desktop above 1140px styles
 
 @media only screen and (min-width: 1140px) {
+
+  // homepage styles
+  .slug-home {
+    .main {
+      h1.headline {
+        font-size: 31px;
+      }
+    }
+  }
 
   // maximum side width container
 
