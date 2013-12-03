@@ -1069,12 +1069,30 @@ footer {
   }
 }
 
-.supporter-nav-button {
+a.supporter-nav-button {
   margin: 5px 0;
   text-align: center;
-  font-size: 18px;
+  @include transition(none);
+  background: $theme-color-14;
+  border: none;
   width: 100%;
-  line-height: 30px;
+  @include background-image(linear-gradient($theme-color-14, $theme-color-15));
+  @include box-shadow(#666 0px 1px 3px);
+  @include border-radius(8px);
+  text-shadow: 1px 1px 1px #666666;
+  font-family: PAGRevolucion;
+  color: #ffffff;
+  font-size: 23px;
+  letter-spacing: 1px;
+  padding: 6px 20px 12px;
+  text-decoration: none;
+  &:hover {
+    background: $theme-color-12;
+    @include background-image(linear-gradient($theme-color-12, $theme-color-13));
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 }
 
 // rules link shown near comment box
