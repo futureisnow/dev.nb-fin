@@ -1694,20 +1694,20 @@ h4.expander-head {
 // homepage styles
 
 .slug-home {
-  .main {
+  .onecolumn-container {
+    width: 100%;
+    padding-top: 14px;
     h1.headline {
       font-family: $font;
       font-size: 23px;
       margin-bottom: 24px;
       line-height: 1.4em;
       .wordmark {
-        float: left;
-        font-size: 20px;
+        font-size: 30px;
         letter-spacing: 1px;
-        margin-right: 5px;
-        margin-top: 1px; 
+        margin-right: 2px;
+        vertical-align: -0.5px; 
         color: #48484D;
-        display: inline-block;
         font-family: PAGRevolucion;
         line-height: 1.4em;
       }
