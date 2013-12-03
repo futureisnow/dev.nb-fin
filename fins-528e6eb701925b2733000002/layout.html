@@ -76,7 +76,9 @@
         <div class="main-container" id="middle">
           <div class="main width-container clearfix">
 
-            {% if request.is_sidebar? %}
+            {% if page.is_homepage? %}
+            {% include "fin_home" %}
+            {% elsif request.is_sidebar? %}
             {% include "columns_2" %}
             {% else %}
             {% include "columns_1" %}
