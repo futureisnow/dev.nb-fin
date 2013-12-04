@@ -405,9 +405,18 @@ ul.membership-list {
 
 // Teacher Action Network signup form
 
-.form-outer {
+.email-signup {
   h2 {
     font-size: 18px; 
+  }
+  form {
+    padding: 20px 25px 10px;
+  }
+  .signup-alt {
+    margin-top: 10px;
+    a {
+      display: inline-block;
+    }
   }
 }
 
@@ -433,11 +442,36 @@ ul.membership-list {
 // homepage styles
 
 .slug-home {
-  .main {
-    h1.headline {
-      font-size: 28px;
-      .wordmark {
-        font-size: 40px;
+  .twocolumn-container {
+    .left-column {
+      width: 48.25%;
+      margin-right: 3.5%; 
+      h1.headline {
+        font-size: 28px;
+        .wordmark {
+          font-size: 40px;
+        }
+      }
+    }
+    .right-column {
+      width: 48.25%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  #home-bottom2 {
+    padding: 22px 0 25px;
+    #bottom2-a {
+      font-style: italic;
+      width: 48%;
+      float: left;
+      margin-right: 4%;
+    }
+    #bottom2-b {
+      float: left;
+      width: 48%; 
+      #tan-outer {
+        margin-top: 0;
       }
     }
   }
@@ -586,9 +620,32 @@ ul#page-stream {
 
   // homepage styles
   .slug-home {
-    .main {
-      h1.headline {
-        font-size: 31px;
+    .twocolumn-container {
+      .left-column {
+        width: 48.25%;
+        margin-right: 3.5%; 
+        margin-top: 14px;
+        padding-top: 0;     
+        h1.headline {
+          font-family: $font;
+          font-size: 31px;
+          margin-bottom: 24px;
+          line-height: 1.4em;
+          .wordmark {
+            font-size: 40px;
+            letter-spacing: 1px;
+            margin-right: 2px;
+            vertical-align: -0.5px; 
+            color: #48484D;
+            font-family: PAGRevolucion;
+            line-height: 1.4em;
+          }
+        }
+      }
+      .right-column {
+        width: 48.25%;
+        padding: 0;
+        margin: 0;
       }
     }
   }

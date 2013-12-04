@@ -1,30 +1,5 @@
-{% include "breadcrumbs" %}
-
 {% if page.headline.size > 0 %}
 <h1 class="headline">{{ page.headline }}</h1>
+{% else %}
+<h1 class="headline"><span class="wordmark">Future Is Now</span> works to improve public education by <strong>organizing</strong> and <strong>supporting</strong> effective educators to <strong>lead</strong> improvements in their schools, districts, and unions.</h1>
 {% endif %}
-
-<div id="content">
-
-  <div id="intro" class="intro">
-    <div class="text-content">
-      {{ page.basic.content }}
-    </div>
-  </div>
-
-  {% if page.tags_count > 0 %}
-  <div class="page-tags">
-    {% include "page_tags" with page %}
-  </div>
-  {% endif %}
-
-  <div class="like-page">
-    <strong>Do you like this page?</strong>
-    {% include "like_page" %}
-  </div>
-
-  {% if page.show_stream? %}
-  {% include "page_stream" %}
-  {% endif %}
-
-</div>

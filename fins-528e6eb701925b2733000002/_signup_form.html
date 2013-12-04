@@ -3,7 +3,7 @@
 {% elsif request.sorta_logged_in? %}
 
 <div class="box">
-	Hi <strong>{{ request.current_signup.name_or_email }}.</strong><br/>
+	Hi <strong>{{ request.current_signup.name_or_email }}</strong>.<br/>
 	<div class="social">
 		Sign in with <a href="{{ request.facebook_connect_url }}">Facebook</a>, <a href="{{ request.twitter_connect_url }}">Twitter</a> or <a href="/login">email</a>.<br/>
 		Not {{ request.current_signup.name_or_email }}? <a href="{{ request.current_signup.logout_url }}">click here</a>.
@@ -14,26 +14,19 @@
 	
 <div class="email-signup form">
 	<h2>Teacher Action Network</h2>
-		{% form_for signup %}
-   		    {% hidden_field_tag "page_id", signup_form.id %} <div class="form-errors">{% error_messages_for signup %}</div>
+	{% form_for signup %}
+		    {% hidden_field_tag "page_id", signup_form.id %} <div class="form-errors">{% error_messages_for signup %}</div>
 
-<!-- COLLECT OTHER INFO HERE? CUSTOM FIELDS? MAYBE JUST DISTRICT/ZIP -->
+<!-- COLLECT OTHER INFO HERE? CUSTOM FIELDS? MAYBE DISTRICT/ZIP? -->
 
-		    <div class="input-outer">
-		  	 {% email_field "email", class:"text", placeholder:"Email address", required: "required" %}
-		    </div>
-			{% submit_tag "JOIN THE NETWORK", class:"submit-button" %}
-		    <div class="form-submit"></div>
-		{% endform_for %}
+	    <div class="input-outer">
+	  	 {% email_field "email", class:"text", placeholder:"Email address", required: "required" %}
+	    </div>
+		{% submit_tag "JOIN THE NETWORK", class:"submit-button" %}
+	    <div class="form-submit"></div>
 
-<!-- GIVE THE OPTION TO USE THEIR SOCIAL MEDIA ACCTS 
-    <ul class="supporter-nav">
-      <li><a href="{{ request.facebook_connect_url }}"><i class="icon-facebook-squared"></i> Sign in with Facebook</a>
-      </li>
-      <li><a href="{{ request.twitter_connect_url }}"><i class="icon-twitter-squared"></i> Sign in with Twitter</a></li>
-      <li><a href="/login"><i class="icon-user"></i> Sign in with Email</a></li>
-    </ul>
--->
+		<div class="signup-alt">Or join using <a href="http://fin.nationbuilder.com/users/facebook/connect?page_id=273&amp;scope=publish_stream,email,user_location,friends_location"><i class="icon-facebook-squared"></i>&nbsp;Facebook</a> or <a href="/users/twitter/connect?page_id=273"><i class="icon-twitter-squared"></i>&nbsp;Twitter</a></div>
+	{% endform_for %}
 </div>
 
 {% endif %}
