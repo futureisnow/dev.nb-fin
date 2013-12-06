@@ -40,24 +40,15 @@
       <div id="body" class="page-{{ request.template | replace: '_', '-' }} slug-{{ page.slug }}">
 
         <div class="header-container clearfix {% if site.has_background_image? %}no-background{% endif %}">
-          <div class="width-container clearfix">
-
-            {% include "nav" %}
-
-            {% if site.has_meta_image? %}
+          <div id="masthead">
+            <header>
               <div class="site-logo">
-                <header>
-                  <a href="/"><img src="{{ site.meta_image_url }}" alt="Future Is Now Homepage"></a>
-                </header>
+                <a href="/"><img src="{{ site.meta_image_url }}" alt="Future Is Now Homepage"></a>
               </div>
-            {% else %}
-              <header class="title">
-                <a href="/">{{ site.long_name }}</a>
-              </header>
-            {% endif %}
-
+              {% include "nav" %}
+            </header>
           </div>
-          <!-- .width-container -->
+          <!-- #masthead -->
         </div>
         <!-- .header-container -->
 

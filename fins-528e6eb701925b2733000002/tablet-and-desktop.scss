@@ -21,32 +21,142 @@
 @import "mobile-nav";
 
 
-// if the site has a logo
-
-.site-logo {
-  header, header.splash {
-    left: 42px;
-    top: 12px;
-    font-size: 32px;
-    line-height: 36px;
-    height: 160px;
-    width: 160px;
-    margin-left: 0;
-  }
-}
-
-.main {
-  font-size: 18px;
-  .callout {
-    width: 24%;
-    margin-top: 10px;
-    margin-right: 5%; 
-  }
-}
+// header — logo & nav
 
 .header-container {
   height: 138px;
+  position: relative;
 }
+
+#masthead {
+  float: left;
+  position: relative;
+  left: 50%;
+  header {
+    float: left;
+    right: 50%;
+    position: relative;
+    .site-logo {
+      position: relative;
+      a {
+        left: 0;
+        top: 12px;
+        font-size: 32px;
+        line-height: 36px;
+        height: 160px;
+        width: 160px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+  // top nav with drop downs
+
+nav, .subnav {
+  background-color: transparent;
+  border-right: 0;
+  border-top: 0;
+  float: left;
+  height: auto;
+  margin-top: 75px;
+  margin-left: 160px;
+  position: static;
+  width: auto;
+  font-family: "PAGRevolucion";
+  font-size: 28px;
+  #topnav {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 0 0 12px;
+      position: relative;
+      background-color: inherit;
+      border: none;
+      line-height: 1.4em;
+      font-size: 28px;
+      letter-spacing: 1px;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: $theme-color-2;
+        padding: 0 0 0 30px;
+        text-shadow: 0 1px #999999;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover, &.active{
+        border-color: transparent;
+        background-color: inherit;
+        a {
+          color: #CEF8FF !important;
+        }
+      }
+    }
+  }
+  /* controls bg color of top when hovering on sub */
+  .sub {
+    position: absolute;
+    top: 54px;
+    left: -1px;
+    z-index: 99999;
+    background-color: $theme-color-3;
+    padding: 8px 0 5px 0;
+    @include border-radius-top-right(2px);
+    @include border-radius-bottom-left(2px);
+    @include border-radius-bottom-right(2px);
+    width: 200px;
+    display: none;
+  }
+  .sub li {
+    width: 100%;
+    border: none;
+    color: $theme-color-2;
+    font-size: 13px;
+    line-height: 18px;
+    display: block;
+    background-color: $theme-color-3;
+    border-color:transparent;
+    @include border-radius(0);
+
+    &.mobile-visible {
+      display: none;
+    }
+  }
+  .sub a {
+    background: none;
+    padding: 5px 20px 5px 22px;
+
+    &:hover {
+      background-color: darken($theme-color-3, 10);
+      text-decoration: none;
+    }
+  }
+}
+
+// navigation shown if a page has more than one subpage
+
+.subnav {
+  margin: 0 0 15px 0;
+  padding: 0;
+  float: left;
+  clear: both;
+  font-size: 13px;
+  max-width: 100%;
+}
+
+.desktop-nav {
+  li:hover .sub {
+    display: block;
+  }
+}
+
 
 // page layout if the sidebar is turned on
 
@@ -165,109 +275,16 @@ footer {
   display: none;
 }
 
-// top nav with drop downs
 
-nav, .subnav {
-  background-color: transparent;
-  border-right: 0;
-  border-top: 0;
-  float: left;
-  height: auto;
-  margin-top: 75px;
-  margin-left: 223px;
-  position: static;
-  width: auto;
-  font-family: "PAGRevolucion";
-  font-size: 28px;
-  #topnav {
-    margin: 0;
-    padding: 0;
-    clear: both;
-    list-style: none;
-    text-align: center;
-    li {
-      display: inline-block;
-      margin: 0 6px;
-      position: relative;
-      background-color: inherit;
-      border: none;
-      line-height: 1.4em;
-      font-size: 28px;
-      letter-spacing: 1px;
-      a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        color: $theme-color-2;
-        padding: 0 15px;
-        text-shadow: 0 1px #999999;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
-      &:hover, &.active{
-        border-color: transparent;
-        background-color: inherit;
-        a {
-          color: #CEF8FF;
-        }
-      }
-    }
-  }
-  /* controls bg color of top when hovering on sub */
-  .sub {
-    position: absolute;
-    top: 54px;
-    left: -1px;
-    z-index: 99999;
-    background-color: $theme-color-3;
-    padding: 8px 0 5px 0;
-    @include border-radius-top-right(2px);
-    @include border-radius-bottom-left(2px);
-    @include border-radius-bottom-right(2px);
-    width: 200px;
-    display: none;
-  }
-  .sub li {
-    width: 100%;
-    border: none;
-    color: $theme-color-2;
-    font-size: 13px;
-    line-height: 18px;
-    display: block;
-    background-color: $theme-color-3;
-    border-color:transparent;
-    @include border-radius(0);
 
-    &.mobile-visible {
-      display: none;
-    }
-  }
-  .sub a {
-    background: none;
-    padding: 5px 20px 5px 22px;
+// little post-it note callout
 
-    &:hover {
-      background-color: darken($theme-color-3, 10);
-      text-decoration: none;
-    }
-  }
-}
-
-// navigation shown if a page has more than one subpage
-
-.subnav {
-  margin: 0 0 15px 0;
-  padding: 0;
-  float: left;
-  clear: both;
-  font-size: 13px;
-  max-width: 100%;
-}
-
-.desktop-nav {
-  li:hover .sub {
-    display: block;
+.main {
+  font-size: 18px;
+  .callout {
+    width: 24%;
+    margin-top: 10px;
+    margin-right: 5%; 
   }
 }
 
@@ -388,8 +405,46 @@ ul.membership-list {
 
 .page-features {
   .features-headline {
-    font-size: 20px;
-    padding: 15px;
+    position: absolute;
+    padding: 0;
+    top: 7%;
+    left: 8%;
+    width: 50%;
+    h2 {
+      color: $theme-color-11;
+      font-size: 36px;
+      font-family: "PAGRevolucion";
+      margin-top: -1px;
+      line-height: 42px;
+      margin-bottom: 14px;
+      letter-spacing: 0px;
+      line-height: 1;
+      text-shadow: 0px -1px 1px rgba(255, 255, 255, 0.3);
+    }
+    h3 {
+      color: $theme-color-11;
+      font-size: 24px;
+      font-family: "PAGRevolucion";
+      margin-bottom: 2px;
+      letter-spacing: 0px;
+      line-height: 1;
+      text-shadow: 0px -1px 1px rgba(255, 255, 255, 0.3);
+    }
+    p {
+      color: $theme-color-18;
+      font-size: 19px;
+      line-height: 26px;
+      font-weight: 600;
+      font-style: italic;
+      margin-bottom: 7px;
+      i {
+        color: $theme-color-22;
+        font-weight: 600; 
+        &:hover {
+          color: $theme-color-21; 
+        }
+      }
+    }
   }
 }
 
@@ -443,13 +498,14 @@ ul.membership-list {
 
 .slug-home {
   .twocolumn-container {
+    padding-top: 0;
     .left-column {
       width: 48.25%;
       margin-right: 3.5%; 
       h1.headline {
         font-size: 28px;
         .wordmark {
-          font-size: 40px;
+          font-size: 31px;
         }
       }
     }
@@ -457,6 +513,10 @@ ul.membership-list {
       width: 48.25%;
       padding: 0;
       margin: 0;
+      .email-signup {
+        position: relative;
+        margin-top: -43px;
+      }
     }
   }
   #home-bottom2 {
@@ -538,8 +598,24 @@ ul#page-stream {
 
 // Tablet only
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-// off canvas nav to be used on tablets, since drop downs don't work on touch devices
 
+  // javascript is used to wrap all iframes in a span called responsive-embed-wrapper to make them responsive.
+  // once the iframe is wrapped in said span, it will be shown.
+
+  iframe[src *= 'youtube'] {
+    display: none;
+  }
+
+  .responsive-embed-wrapper iframe {
+    display: block;
+  }
+
+  .fb-like-box iframe {
+    display: block;
+  }
+
+  /* HIDING TABLET-SPECIFIC NAV STYLES BECAUSE NOT USING DROP-DOWNS CURRENTLY
+  // off canvas nav to be used on tablets, since drop downs don't work on touch devices
   nav {
     @include mobile-nav;
     float: none;
@@ -585,31 +661,49 @@ ul#page-stream {
     left: 16em;
   }
 
-// javascript is used to wrap all iframes in a span called responsive-embed-wrapper to make them responsive.
-// once the iframe is wrapped in said span, it will be shown.
-
-  iframe[src *= 'youtube'] {
-    display: none;
-  }
-
-  .responsive-embed-wrapper iframe {
-    display: block;
-  }
-
-  .fb-like-box iframe {
-    display: block;
-  }
-
-
-// replaces the subnav with breadcrumbs, as dropdowns don't work in touch devices
-
+  // replaces the subnav with breadcrumbs, as dropdowns don't work in touch devices
   .tablet-visible {
     display: block;
   }
-
   .desktop-visible {
     .subnav-container {
       display: none;
+    }
+  }
+  */
+}
+
+@media screen and (min-width: 875px) {
+.page-features {
+  .features-headline {
+    top: 8%;
+    left: 8%;
+    width: 50%; }
+    p {
+      font-size: 21px;
+      line-height: 29px;
+    }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .page-features {
+    .features-headline {
+      top: 10%;
+      left: 8%;
+      width: 50%;
+      h2 {
+        font-size: 42px;
+        line-height: 42px;
+      }
+      h3 {
+        font-size: 31px;
+      }
+      p {
+        font-size: 23px;
+        line-height: 33px;
+        margin-bottom: 8px; 
+      }
     }
   }
 }
@@ -618,34 +712,16 @@ ul#page-stream {
 
 @media only screen and (min-width: 1140px) {
 
-  // homepage styles
+  // homepage styles for desktop
   .slug-home {
     .twocolumn-container {
       .left-column {
-        width: 48.25%;
-        margin-right: 3.5%; 
-        margin-top: 14px;
-        padding-top: 0;     
         h1.headline {
-          font-family: $font;
           font-size: 31px;
-          margin-bottom: 24px;
-          line-height: 1.4em;
           .wordmark {
-            font-size: 40px;
-            letter-spacing: 1px;
-            margin-right: 2px;
-            vertical-align: -0.5px; 
-            color: #48484D;
-            font-family: PAGRevolucion;
-            line-height: 1.4em;
+            font-size: 34.5px;
           }
         }
-      }
-      .right-column {
-        width: 48.25%;
-        padding: 0;
-        margin: 0;
       }
     }
   }

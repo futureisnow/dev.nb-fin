@@ -4,7 +4,7 @@
 
 <!-- Not allowing sub-nav on site at the moment 
     {% if child.leaf? or child.nav_children.size == 0 %} -->
-    <li {% if child.is_or_is_ancestor_of_current_page? %}class="active"{% endif %}>
+    <li {% if child.is_or_is_ancestor_of_current_page? and if page.is_homepage? == false %}class="active"{% endif %}>
       <a href="{{ child.url }}">{{ child.name }}</a>
     </li>
 
