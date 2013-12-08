@@ -201,9 +201,9 @@ em {
     margin: 8px 0 4px; }
   .callout { // looks like a post-it note
     float: left;
-    width: 26%;
+    width: 45%;
     margin-top: 9px;
-    margin-right: 2.5%;
+    margin-right: 5%;
     margin-bottom: 8px;
     background-color: #fcfbdb;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
@@ -308,7 +308,7 @@ body {
 }
 
 .width-container {
-  width: 90%;
+  width: 92.5%;
   margin: 0 auto;
   max-width: 1026px;
 }
@@ -1060,7 +1060,7 @@ footer {
       @include border-radius-bottom-right(5px);
     }
     &:hover {
-      border-left: 3px solid $theme-color-3;
+      border-left: 3px solid $theme-color-23;
     }
     a {
       padding: 15px 15px;
@@ -1459,8 +1459,12 @@ ul.membership-list {
   background-color: #f3f3f3;
   padding: 15px;
   width: 100%;
-  p:first-child {
+  p {
+    margin-top: 11px;
+    margin-bottom: 0;
+    &:first-child {
     margin: 0;
+    }
   }
   .answer-a {
     float: left;
@@ -1491,15 +1495,13 @@ ul.membership-list {
 // list of questions on faq pages
 
 .question-list {
-  margin: 0;
-  padding: 0 0 0 15px;
+  margin: 0 0 15px;
+  padding: 10px 0 15px;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+  font-weight: 600;
   li {
-    list-style: disc;
-    margin: 0;
-    padding: 0 0 15px 0;
+    padding: 0;
+    margin-bottom: 10px;
     &:last-child {
       padding: 0;
     }
@@ -1508,9 +1510,9 @@ ul.membership-list {
 
 .left-column-narrow {
   .question-list {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -2035,27 +2037,22 @@ h4.expander-head {
 
 .flex-prev, .flex-next {
   display: none; // hids next/prev arrows in mobile viewport
-  position: absolute; top: 41%;
+  position: absolute; 
+  top: 41%;
   z-index: 9999;
   font-size: 16px;
-  padding: 15px 10px;
-  background: $theme-color-3;
-  border: 1px solid darken($theme-color-3, 10);
-  color: white;
+  padding: 10px;
+  &:link {
+    color: $theme-color-3;
+  }
 }
 
 .flex-prev {
   left: 0;
-  @include border-radius-top-right(2px);
-  @include border-radius-bottom-right(2px);
-  border-left: 0;
 }
 
 .flex-next {
   right: 0;
-  @include border-radius-top-left(2px);
-  @include border-radius-bottom-left(2px);
-  border-right: 0;
 }
 
 //pagination

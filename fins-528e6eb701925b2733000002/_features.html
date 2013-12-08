@@ -15,7 +15,7 @@
     <img src="{{ feature.image_url }}" height="{{ feature.image_height }}" width="{{ feature.image_width }}"/>
   </a>
   {% if feature.headline.size > 0 %}
-    <a class="features-headline" href="{{ feature.page.url }}">{{ feature.headline }}</a>
+    <a class="features-headline" href="{{ feature.page.url }}">{{ feature.name }}{{ feature.headline }}</a>
     {% endif %}
   {% endfor %}
   
@@ -31,7 +31,7 @@
           <img src="{{ feature.image_url }}" height="{{ feature.image_height }}" width="{{ feature.image_width }}"/>
         </a>
         {% if feature.headline.size > 0 %}
-        <a class="features-headline" href="{{ feature.page.url }}">{{ feature.headline }}</a>
+        <a class="features-headline" href="{{ feature.page.url }}">{{ feature.name }}{{ feature.headline }}</a>
         {% endif %}
       </li>
       {% endfor %}

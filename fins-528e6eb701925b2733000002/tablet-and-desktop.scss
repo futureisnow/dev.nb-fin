@@ -166,26 +166,23 @@ nav, .subnav {
   padding-top: 26px;
   .left-column, .right-column-wide {
     background-color: #fff;
-    padding: 20px 20px 0 0;
+    padding: 20px 0 0 0;
     float: left;
-    width: 68.2261208577%;
-    // 710px ÷ 1026px
-    margin-right: 1.559454191033%;
-    // 16px ÷ 1026px
+    width: 53%;
+    margin-right: 4%;
     margin-bottom: 0;
   }
   .right-column, .left-column-narrow {
     float: left;
-    width: 30.214424951267%;
-    // 310px ÷ 1026px
+    width: 43%;
     margin-bottom: 0;
+    padding-top: 20px;
   }
   .right-column-wide {
     margin-right: 0;
   }
   .left-column-narrow {
-    margin-right: 1.559454191033%;
-    // 16px ÷ 1026px
+    margin-right: 4%
   }
 }
 
@@ -280,11 +277,9 @@ footer {
 // little post-it note callout
 
 .main {
-  font-size: 18px;
   .callout {
     width: 24%;
     margin-top: 10px;
-    margin-right: 5%; 
   }
 }
 
@@ -407,11 +402,12 @@ ul.membership-list {
   .features-headline {
     position: absolute;
     padding: 0;
-    top: 7%;
+    top: 15%;
     left: 8%;
     width: 50%;
     h2 {
       color: $theme-color-11;
+      &.l {color: $theme-color-19;}
       font-size: 36px;
       font-family: "PAGRevolucion";
       margin-top: -1px;
@@ -423,6 +419,7 @@ ul.membership-list {
     }
     h3 {
       color: $theme-color-11;
+      &.l {color: $theme-color-19;}
       font-size: 24px;
       font-family: "PAGRevolucion";
       margin-bottom: 2px;
@@ -432,6 +429,15 @@ ul.membership-list {
     }
     p {
       color: $theme-color-18;
+      &.l {
+        color: $theme-color-24;
+        i {
+          color: $theme-color-25;
+          &:hover {
+            color: $theme-color-26;
+          }
+        }
+      }
       font-size: 19px;
       line-height: 26px;
       font-weight: 600;
@@ -439,9 +445,12 @@ ul.membership-list {
       margin-bottom: 7px;
       i {
         color: $theme-color-22;
-        font-weight: 600; 
+        font-weight: 700; 
         &:hover {
           color: $theme-color-21; 
+        }
+        &.d {
+          color: $theme-color-23;
         }
       }
     }
@@ -449,12 +458,11 @@ ul.membership-list {
 }
 
 .flex-direction-nav {
-  top: 36%;
+  top: 43.5%;
 }
 
 .flex-prev, .flex-next {
   display: block;
-  height: 58px;
   font-size: 25px;
 }
 
@@ -674,14 +682,20 @@ ul#page-stream {
 }
 
 @media screen and (min-width: 875px) {
-.page-features {
-  .features-headline {
-    top: 8%;
-    left: 8%;
-    width: 50%; }
-    p {
-      font-size: 21px;
-      line-height: 29px;
+  .page-features {
+    .features-headline {
+      p {
+        font-size: 21px;
+        line-height: 29px;
+      }
+    }
+  }
+  .twocolumn-container {
+    .left-column, .right-column-wide {
+      width: 57%;
+    }
+    .right-column, .left-column-narrow {
+      width: 39%;
     }
   }
 }
@@ -689,9 +703,6 @@ ul#page-stream {
 @media screen and (min-width: 980px) {
   .page-features {
     .features-headline {
-      top: 10%;
-      left: 8%;
-      width: 50%;
       h2 {
         font-size: 42px;
         line-height: 42px;
@@ -705,6 +716,17 @@ ul#page-stream {
         margin-bottom: 8px; 
       }
     }
+  }
+  .twocolumn-container {
+    .left-column, .right-column-wide {
+      width: 62%;
+    }
+    .right-column, .left-column-narrow {
+      width: 34%;
+    }
+  }
+  .main {
+    font-size: 18px;
   }
 }
 
