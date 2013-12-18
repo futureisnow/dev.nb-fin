@@ -1588,6 +1588,7 @@ ul.membership-list {
     @include border-radius(0);
     border: none;
     margin: 0;
+    width: 100%;
   }
   .right-column .is_following {
     display: none;
