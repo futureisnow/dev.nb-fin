@@ -5,7 +5,7 @@
 <!-- only show the page's headline if this is a blog that allows public posting -->
 {% if page.headline.size > 0 and page.blog.is_posting_public? %}
 	<div id="headline">
-		<h2>{{ page.headline }}</h2>
+		<h1>{{ page.headline }}</h1> 
 	</div>
 {% endif %}
 
@@ -71,7 +71,7 @@
 	{% for post in page.blog.most_recent_blog_posts %}
 	
 			<li><div class="content_list_arrow" id="blog_post_page_{{ post.id }}">
-			<h3><a href="{{ post.url }}">{{ post.headline }}</a></h3>
+			<h1><a href="{{ post.url }}">{{ post.headline }}</a></h1>
 		
 			<div class="byline">
 				Posted by {{ post.author.published_name_linked }} on {{ post.published_at | date: '%B %d, %Y' }}

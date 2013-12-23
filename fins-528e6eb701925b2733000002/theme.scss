@@ -76,9 +76,12 @@ html {
 
 // headlines
 
-h1, header {
+h1, header,
+.page-pages-show-blog-post .headline h2,
+.page-pages-show-blog .page-excerpt h3 {
   font-family: $headline-font;
   font-weight: normal;
+  font-style: normal;
   margin: 0;
   padding: 0;
 }
@@ -90,7 +93,7 @@ h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-h1, h2 {
+h1, h2, .page-pages-show-blog .page-excerpt h3 {
   line-height: 41px;
 }
 
@@ -98,7 +101,7 @@ h3 {
   line-height: 25px;
 }
 
-h1 {
+h1, .page-pages-show-blog-post .headline h2, .page-pages-show-blog .page-excerpt h3 {
   font-size: 41px;
 }
 
@@ -183,6 +186,9 @@ em {
   p, ul {
     margin-bottom: 11px;
     line-height: 145%; 
+  }
+  ol li {
+    list-style: decimal;
   }
   li {
     list-style-type: square;
@@ -276,9 +282,25 @@ em {
       }
     }
   }
-  .faq {
-    h3 {
-
+  .cta {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .author-inset {
+    color: #888888;
+    float: left;
+    font-size: 11px;
+    margin: 3px 3% 2% 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 30%;
+  }
+  #content {
+    .button {
+      &:link, &:visited, &:hover, &:active {
+        color: #fff;
+        @include transition(none);
+      }
     }
   }
 }
@@ -1049,7 +1071,7 @@ footer {
 
 // supporter nav which is shown if a user is signed in
 
-.supporter-nav {
+.supporter-nav, ul.supporter-nav {
   margin: 0;
   padding: 0;
   li {
