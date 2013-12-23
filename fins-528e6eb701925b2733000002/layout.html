@@ -127,11 +127,11 @@
                   <a href="{{ site.broadcaster.twitter_profile_url }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.broadcaster.twitter_login }} on Twitter</a>
                 {% endif %}
 
-                {% if page and page.has_rss? %}
-                  <a href="{{ page.rss_url }}"><i class="icon-rss"></i>&nbsp;Subscribe with RSS</a>
+<!--                {% if page and page.has_rss? %}
+                  <br><a href="{{ page.rss_url }}" style="border-bottom: none;"><i class="icon-rss"></i>&nbsp;Subscribe with RSS</a>
                 {% elsif page and page.has_parent? and page.parent.has_rss? %}
-                  <a href="{{ page.parent.rss_url }}"><i class="icon-rss"></i>&nbsp;Subscribe with RSS</a>
-                {% endif %}
+                  <br><a href="{{ page.parent.rss_url }}" style="border-bottom: none;"><i class="icon-rss"></i>&nbsp;Subscribe with RSS</a>
+                {% endif %}-->
               </div>
 
             </div>
@@ -142,12 +142,12 @@
                   <a href="{{ child.url }}">{{ child.name }}</a>
                 </li>
                 {% endfor %}
-
               </ul>
             </div>
             <div class="foot3">
               <p><strong>Future Is Now</strong><br /><a href="mailto:info@finschools.org">info@finschools.org</a> <br />(213) 623-5800 <br />626 Wilshire Blvd, Suite&nbsp;220 <br />Los Angeles, CA 90017</p>
               <!-- Insert broadcaster info dynamically instead? -->
+              <p style="margin-top: 10px;"><a href="/feedback">Send feedback&nbsp;&rarr;</a></p>
             </div>
          </div>
          <!-- .width-container -->
