@@ -286,14 +286,11 @@ em {
     text-align: center;
     padding: 10px 0;
   }
-  .author-inset {
-    color: #888888;
-    float: left;
-    font-size: 11px;
-    margin: 3px 3% 2% 0;
-    text-align: center;
-    text-transform: uppercase;
-    width: 30%;
+  .post-image { // for main image on blog posts
+    color: #888888; 
+    font-size: 70%; 
+    margin: 0 0 4% 0; 
+    width: 100%;
   }
   #content {
     .button {
@@ -620,7 +617,7 @@ nav {
       display: block;
     }
     img {
-//      @include border-radius-bottom-left(5px);
+      @include border-radius-bottom-left(5px);
       max-width: 100%;
     }
     .pc {
@@ -1067,6 +1064,10 @@ footer {
   line-height: 15px;
   margin-top: 5px;
   color: #888;
+  .author-pic {
+    float: left; 
+    margin: 2px 5px 0px 0px;
+  }
 }
 
 // supporter nav which is shown if a user is signed in

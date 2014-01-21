@@ -221,6 +221,14 @@ footer {
  }   
 }
 
+// byline on blog posts for desktop/tablet
+.page-pages-show-blog-post {
+  .byline {
+    float: right;
+    margin: 5px 0 0 4%;
+  }
+}
+
 // hides off canvas nav
 
 .wrap.active {
