@@ -49,25 +49,32 @@
         Posted by {{ post.author.published_name_linked }} &middot; {{ post.published_at | date: '%B %d, %Y %l:%M %p' }}
       </div>
 
-      <div class="excerpt clearfix">
-
-        {{ post.blog_post.content }}
-        {% if post.blog_post.is_extended? %}
-        <span class='read-more'><a href='{{ post.url }}'>MORE&nbsp;&rarr;</a></span>
+      <div class="thumb-blurb clearfix">
+        {% if post.has_meta_image? == false %}{% else %}
+          <a href="{{ post.url }}" class="thumb-link"><img alt="{{ post.headline }}" src="{{ post.meta_image_url }}"></a>
         {% endif %}
+        {% if post.has_meta_image? == false %}
+          <div>{% else %}
+          <div class="inner-blurb">
+        {% endif %}
+            {% if post.excerpt.size > 0 %}
+              {{ post.excerpt }}{% else %}{{ post.blog_post.content }}
+            {% endif %}
+            <span class='read-more'><a href='{{ post.url }}'>{{ post.headline }}</a></span>
+            <div class="post-share">
+              {% if post.show_stream? %}
+                <a href="{{ post.url }}#addreaction" class="button small-button">
+                {% if post.public_activities_count > 0 %}
+                  {{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}
+                {% else %}
+                  Add your reaction
+                {% endif %}
+                </a>
+              {% endif %}
+              {{ "Share" | share_button page_id: post.id }}
+            </div>
+          </div>
       </div>
-
-      {% if post.show_stream? %}
-
-      <a href="{{ post.url }}#addreaction" class="button small-button">
-      {% if post.public_activities_count > 0 %}
-        {{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}
-      {% else %}
-        Add your reaction
-      {% endif %}
-      {% endif %}
-      </a>
-      {{ "Share" | share_button page_id: post.id }}
     </div>
 
     <hr/>

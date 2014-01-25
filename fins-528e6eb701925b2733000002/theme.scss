@@ -244,7 +244,7 @@ em {
   }
   .thumb-blurb {
     width: 100%;
-    margin: 23px 0 0;
+    margin: 15px 0 0;
     .thumb-link, .inner-blurb {
       float: left; 
     }
@@ -262,6 +262,9 @@ em {
       a {
         font-weight: bold; 
       }
+    }
+    .post-share {
+      margin-top: 10px;
     }
   }
   #staff-list {
@@ -291,6 +294,15 @@ em {
     font-size: 70%; 
     margin: 0 0 4% 0; 
     width: 100%;
+  }
+  .read-more,.read_more {
+    display: inline;
+    font-weight:bold;
+    margin: 0;
+    a:after {
+      content: "→";
+      padding-left: 3px;
+    }
   }
   #content {
     .button {
