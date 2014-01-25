@@ -695,6 +695,7 @@ nav {
   background-color: #fff;
   padding: 20px;
   margin-bottom: 15px;
+  word-wrap: break-word;
   @include border-radius(5px);
   border: 1px solid #ebebeb;
   &:last-child {
