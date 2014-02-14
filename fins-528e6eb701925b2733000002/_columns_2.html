@@ -13,6 +13,12 @@
 
   <div class="right-column">
 
+
+    {% if page.slug == 'actions' %}
+      {% include "rightcolumn_greybox" %}
+    {% endif %}
+
+
     {% if request.logged_in? %}
 
       {% include "supporter_nav" %}

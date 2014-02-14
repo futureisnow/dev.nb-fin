@@ -304,6 +304,11 @@ em {
       padding-left: 3px;
     }
   }
+  .grey-box {
+    margin: 20px 0;
+    &:first-child {
+      margin-top: 0;
+    }
   #content {
     .button {
       &:link, &:visited, &:hover, &:active {
