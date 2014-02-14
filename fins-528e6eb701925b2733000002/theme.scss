@@ -22,6 +22,9 @@
 // compass css3 mixins
 @import "compass/css3";
 
+// compass force wrap
+@import "compass/typography/text/force-wrap";
+
 // countdown widget for moneybomb page
 @import "framework_countdown2";
 
@@ -165,7 +168,7 @@ strong {
 em {
   font-style: italic; }
 
-.main{
+.main {
   h2, .content-pages-show-question h1.headline, .content-pages-show-faq h3 { // treat h1 like h2 on faq question pages
     font-size: 22px;
     font-weight: bold;
@@ -295,6 +298,22 @@ em {
     margin: 0 0 4% 0; 
     width: 100%;
   }
+  .post-image-caption { // main image caption for blogs
+    color: #949494;
+    font-size: 80%; 
+    line-height: 1.2em;
+    margin: -3.8% 0 4%;
+    &.right {
+      float: right;
+      width: 50%;
+      margin: 0 0 3% 3%;
+    }
+  }
+  .content-pages-show-basic { // main image caption for static pages
+    .post-image-caption {
+      margin-top: 0;
+    }
+  }
   .read-more,.read_more {
     display: inline;
     font-weight:bold;
@@ -309,12 +328,37 @@ em {
     &:first-child {
       margin-top: 0;
     }
+  }
+  .button {
+    &:link, &:visited, &:hover, &:active {
+      color: #fff;
+      @include transition(none);
+    }
+  }
+  .button.alt {
+    background: $theme-color-12;
+    @include background-image(linear-gradient($theme-color-12, $theme-color-13));
+    @include box-shadow(#666 0px 1px 3px);
+    @include border-radius(4px);
+    text-shadow: 1px 1px 1px #666666;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover {
+      background: $theme-color-14;
+      @include background-image(linear-gradient($theme-color-14, $theme-color-15));
+      cursor: pointer;
+    }
+  }
+  blockquote {
+    border-left: 1px solid #CCCCCC;
+    color: $theme-color-3;
+    font-style: italic;
+    margin-left: 0;
+    padding-left: 20px;
+  }
   #content {
-    .button {
-      &:link, &:visited, &:hover, &:active {
-        color: #fff;
-        @include transition(none);
-      }
+    h3 {
+      margin-top: 20px;
     }
   }
 }
@@ -603,9 +647,20 @@ nav {
   margin-bottom: 20px;
   @include border-radius(5px);
   @include box-shadow(rgba(black, 0.3) 0px 0px 15px 0px);
-  .user-status span {
-    display: inline-block;
-    padding-top: 5px;
+  .user-status {
+    span {
+      display: inline-block;
+      padding-top: 5px;
+    }
+    .button {
+      background-color: $theme-color-1;
+      a:link, a:visited {
+        color: #fff;
+      }
+      a:hover, a:active {
+        color: #ccc;
+      }
+    }
   }
   h2 {
     text-transform: uppercase;
@@ -712,11 +767,19 @@ nav {
   background-color: #fff;
   padding: 20px;
   margin-bottom: 15px;
-  word-wrap: break-word;
   @include border-radius(5px);
   border: 1px solid #ebebeb;
   &:last-child {
     margin-bottom: 0;
+  }
+  h2:first-child {
+    margin-top: 0;
+  }
+  *:last-child {
+    margin-bottom: 0;
+  }
+  .profile-website {
+    @include force-wrap;
   }
 }
 
@@ -1147,7 +1210,6 @@ a.supporter-nav-button {
     text-decoration: none;
     cursor: pointer;
   }
-
 }
 
 // rules link shown near comment box
@@ -1509,11 +1571,14 @@ ul.membership-list {
 
 // answers on faq pages
 
-.answer-wrap {
+.answer-wrap, .grey-box {
   @include border-radius(2px);
   background-color: #f3f3f3;
   padding: 15px;
   width: 100%;
+  h2:first-child {
+    margin-top: 3px;
+  }
   p {
     margin-top: 11px;
     margin-bottom: 0;
@@ -1839,6 +1904,9 @@ h4.expander-head {
 }
 
 .page-profiles-show-wide {
+  h1.headline+h3 {
+    color: $theme-color-27;
+  } 
   .right-column {
     .progress {
       margin-bottom: 0;
