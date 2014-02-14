@@ -1,0 +1,66 @@
+/*  123contact.css */
+
+h1.headline {
+	color: #5A5A60;
+}
+
+div#formwrapper {
+	padding: 0 !important;
+}
+
+div.maintable_centered {
+	margin: 0;
+}
+
+div.fieldwidth50 {
+	min-width: 280px;
+}
+
+div.fieldcontainer, div.fieldcontainer p {
+	font-family: "adelle",Georgia,serif;
+}
+
+div.fieldcontainer textarea {
+	height: auto;
+}
+
+div.fieldcontainer label.class123-label {
+	color: #5A5A60;
+	font-size: 73%;
+	font-family: "adelle",Georgia,serif;
+}
+
+div.fieldcontainer div.uberfieldlat {
+	margin: 22px 0 7px;
+}
+
+div.fieldcontainer div.uberfieldlat label.class123-label {
+  	color: #71403E;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 110%;
+	text-transform: none;
+}
+
+div.fieldcontainer div.rowup, div.fieldcontainer div.rowdown {
+	margin: 0;
+	width: 96%;
+}
+
+span.class123-firstname, span.class123-lastname {
+  margin-right: 10px;
+  width: 200px;
+}
+
+.fieldcontainer label {
+	margin-bottom: 0;
+}
+
+label.class123-labelmic {
+	font-family: "adelle",Georgia,serif;
+	font-size: x-small;
+}
+
+.requiredspan {
+	display: inline;
+}
