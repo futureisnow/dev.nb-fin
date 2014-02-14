@@ -2,17 +2,30 @@
 
   <div class="left-column">
 
-    {% if profile.profile_headline.size > 0 %}
-    <h1 class="headline">{{ profile.profile_headline }}</h1>
-    {% else %}
     <h1 class="headline">{{ profile.published_name }}</h1>
+    <h3>Teacher Action Network Profile</h3>
+
+    <hr>
+
+    {% if profile.custom_values.long_bio.size > 0 %}
+      {{ profile.custom_values.long_bio }} 
+      <hr>
     {% endif %}
 
     {% if profile.profile_content.size > 0 %}
-    <div id="intro" class="intro">
-      {{ profile.profile_content }}
-    </div>
-    <hr/>
+
+      <h2>{{ profile.first_name }} says&hellip;</h2>
+
+      <div class="form-wrap">
+        {% if profile.profile_headline.size > 0 %}
+        <h3>{{ profile.profile_headline }}</h3>
+        {% endif %}
+        <div id="intro" class="intro">
+          {{ profile.profile_content }}
+        </div>
+      </div>
+
+      <hr>
     {% endif %}
 
     {% if profile.most_recent_posts.size > 0 %}
@@ -32,7 +45,7 @@
             </div>
             {% endif %}
 
-            <hr/>
+            <hr>
           </li>
           {% endfor %}
         </ul>
@@ -51,11 +64,11 @@
       <h2>Teacher Action Network</h2>
       <div class="supporter-pic-left">
         {{ profile.bigger_profile_image }}
-        <span class="pc">{{ request.current_signup.capital_amount_format }}</span>
+        <span class="pc">{{ profile.capital_amount_format }}</span>
       </div>
-      <div class="supporter-pic-right">
-        <a href="{{ request.current_signup.settings_url }}" class="name" id="name">{{ profile.published_name }}</a>
-
+      <div class="supporter-pic-right"> <!-- Can we get this to be wider? -->
+        <span class="name" id="name">{{ profile.published_name }}</span>
+        <!-- What if the profile support level showed up here? Or occupation? -->
         <div class="user-status">
           {% if profile.has_membership_level_badge %}
           {% if site.has_membership_page? %}
@@ -78,16 +91,25 @@
       </div>
     </div>
 
-    {% if profile.has_bio? or profile.has_website? or profile.has_twitter_info? %}
+    {% if profile.has_bio? or profile.has_website? or profile.has_twitter_info? or profile.has_occupation? or profile.has_employer? %}
     <div class="box">
+      {% if profile.occupation.size > 0 or profile.employer.size > 0 %}
+        <h2>{{ profile.occupation }}, {{ profile.employer }}</h2>
+      {% endif %}
+      {% if profile.custom_values.union_member.size > 0 %}
+        <h3 style="padding-top: 8px; margin-bottom: 0;">Teachers Union Member</h3>
+        {% if profile.custom_values.union_name.size > 0 %}
+          <p><em>{% if profile.custom_values.union_website.size > 0 %}<a href="{{ profile.custom_values.union_website }}">{% endif %}{{ profile.custom_values.union_name }}{% if profile.custom_values.union_website.size > 0 %}</a>{% endif %}</em></p>
+        {% endif %}
+      {% endif %}
       {% if profile.has_bio? %}
-      {{ profile.bio | link_urls }}
+        <p>{{ profile.bio | link_urls }}</p>
       {% endif %}
       {% if profile.has_website? %}
-      <div class="padtopmore"><a href="{{ profile.website }}">{{ profile.website }}</a></div>
+      <p class="profile-website"><a href="{{ profile.website }}">{{ profile.website }}</a></p>
       {% endif %}
       {% if profile.has_twitter_info? %}
-      <div class="padtopmore">
+      <div>
         <a href="{{ profile.twitter_profile_url }}" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">@{{ profile.twitter_login }}</a>
       </div>
       {% endif %}
@@ -131,6 +153,10 @@
     {% if site.has_button3? %}
     <a class="button supporter-nav-button" href="{{ site.button3_page.full_url_with_profile_recruiter }}">{{ site.button3_text }}</a>
     {% endif %}
+
+
+    <!-- ADD LOGIN FOR CURRENT USER HERE IF THEY HAVE AN ACCOUNT, 
+         ELSE ENCOURAGE THEM TO CREATE AN ACCOUNT                 -->
 
   </div>
 
