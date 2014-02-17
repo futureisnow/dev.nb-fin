@@ -1825,7 +1825,7 @@ h4.expander-head {
       h1.headline {
         font-family: $font;
         font-size: 23px;
-        margin-bottom: 24px;
+        margin-bottom: 0;
         line-height: 1.4em;
         .wordmark {
           font-size: 26.5px;
@@ -1863,15 +1863,15 @@ h4.expander-head {
       margin-top: 25px;
       margin-bottom: 10px;
       box-shadow: 0px 1px 3px rgba(0,0,0,.22);
-    }
-    #tan-outer h3 {
-      font-family: PAGRevolucion;
-      font-weight: normal;
-      font-style: normal;
-      line-height: 100%;
-      font-size: 23px;
-      margin-bottom: 11px;
-      letter-spacing: 1px;
+      h3 {
+        font-family: PAGRevolucion;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 100%;
+        font-size: 23px;
+        margin-bottom: 11px;
+        letter-spacing: 1px;
+      }
     }
   }
 }
