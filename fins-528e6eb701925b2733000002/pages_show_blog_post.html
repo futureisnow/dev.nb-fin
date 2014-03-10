@@ -6,22 +6,15 @@
   <div class="like-page">
     {% include "like_page" %}
   </div>
-
-  <div class="post-image">
-    {% for attachment in page.attachments limit:1 %} 
-    <img src="{{ attachment.url }}" class="bigpic" />
-    {% endfor %}
-  </div>
-
-
 </div>
 
 <div id="content">
 
   <div id="intro" class="intro">
     <div class="content">
+      {{ page.blog_post.content }}
       {% include "page_byline" %}
-      {{ page.blog_post.content_full }}
+      {{ page.blog_post.content_flip }}
     </div>
   </div>
 
@@ -30,6 +23,10 @@
     {% include "page_tags" with page %}
   </div>
   {% endif %}
+
+  <div class="like-page">
+    {% include "like_page" %}
+  </div>
 
   {% if page.show_stream? %}
   {% include "page_stream" %}
