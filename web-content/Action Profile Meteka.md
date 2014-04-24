@@ -30,6 +30,12 @@ Meteka set out, first assembling a team of like-minded teachers who felt equal p
 
 When a vote was finally held in the early spring, Baldwin Hills teachers voted overwhelmingly to convert to a pilot school, with 28 of the school’s 29 teachers signing on.
 
-##An Example of Teacher Leadership
+##An Example of Teacher-Leadership
 
-Unfortunately, it is all too common for teachers to experience the sense of frustration and powerlessness encountered by Baldwin Hills’ faculty. Through effective organizing, Meteka and her colleagues were able to harness these negative emotions and direct them towards a productive push to transform their school
+Unfortunately, it is all too common for teachers to experience the sense of frustration and powerlessness encountered by Baldwin Hills’ faculty. Meteka and her colleagues hope their situation can serve as an inspiration to other teachers in a similar predicament. 
+
+“It’s all about the organizing,” says Meteka. “By setting a positive goal and then connecting with each other, one-on-one, we were able to harness all of these negative emotions and transform them into something productive.”
+
+Bullard sees another another benefit, too. 
+
+“Now that we were able to accomplish this, we know that we can do the hard work ahead of running a truly great school,” she says.
