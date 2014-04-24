@@ -14,19 +14,16 @@ But in the fall of 2013, faculty members were starting to feel frustrated. New l
 
 Frequently, once this frustration sets in, even the best teachers will decide to leave the school, or even the profession. Meteka Bullard did not want to see this happen to Baldwin Hills. Having taught for 13 years, she was still a junior member of the faculty. But she thought there was something she could do to preserve the school’s success, and possibly push it towards even greater heights. 
 
-##Empowering Teachers Through Pilot Schools
+##Pilot Schools
 
-Meteka had just joined Future Is Now’s [Teacher Action Network Fellowship][/fellowship], where she had learned of [LAUSD’s Pilot School][pilots] model for granting local school control to the staff. She felt sure that the faculty at Baldwin Hills would thrive with such increased autonomy. 
+Meteka had just joined Future Is Now’s [Teacher Action Network Fellowship](/fellowship), where she had learned of [LAUSD’s Pilot School model](http://pilotschools.lausd.net/) for granting local school control to the staff. She felt sure that the faculty at Baldwin Hills would thrive with such increased autonomy. 
 
-However, converting an existing school to a pilot school is no small feat. More than two-thirds of the school’s full-time teachers must sign on to the effort in an official vote. 
+However, converting an existing school to a pilot school is no small feat. More than two-thirds of the school’s full-time teachers must sign on to the effort in an official vote. Meanwhile, Baldwin Hills’ current leadership was unlikely to be supportive. 
 
 ##Organizing for Change
 
-where she had learned that the core tenet of pursuing change was **organizing**. Through her training in the Fellowship, she was learning that if you wanted to change the system from the bottom up, you needed to organize and inform others who might join you in the cause. Only once you had a critical mass of support could you create a movement that changed the system from within.
+Through her training in the Fellowship, Meteka was learning that if you wanted to change a system from the bottom up, you needed to organize and inform others who might join you in the cause. Only once you had a critical mass of support could you create a movement that changed the system from within.
 
-Meteka realized that her school was the system that needed to be changed — and its teachers were exactly the people to lead that change. 
+Meteka realized that her school was the very system that needed to be changed — and its teachers were exactly the people to lead that change. 
 
-So Meteka set out, first assembling a team of like-minded teachers who felt equal passion for 
-
-
-[pilots]: http://pilotschools.lausd.net/
+Meteka set out, first assembling a team of like-minded teachers who felt equal passion for the opportunity a pilot school offered, and similar disappointment with the direction the school was headed. 
