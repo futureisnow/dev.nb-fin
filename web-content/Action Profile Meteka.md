@@ -26,4 +26,10 @@ Through her training in the Fellowship, Meteka was learning that if you wanted t
 
 Meteka realized that her school was the very system that needed to be changed — and its teachers were exactly the people to lead that change. 
 
-Meteka set out, first assembling a team of like-minded teachers who felt equal passion for the opportunity a pilot school offered, and similar disappointment with the direction the school was headed. 
+Meteka set out, first assembling a team of like-minded teachers who felt equal passion for the opportunity a pilot school offered, as well as similar disappointment with the direction the school was headed. Then, the team members methodically reached out to their colleagues. 
+
+When a vote was finally held in the early spring, Baldwin Hills teachers voted overwhelmingly to convert to a pilot school, with 28 of the school’s 29 teachers signing on.
+
+##An Example of Teacher Leadership
+
+Unfortunately, it is all too common for teachers to experience the sense of frustration and powerlessness encountered by Baldwin Hills’ faculty. Through effective organizing, Meteka and her colleagues were able to harness these negative emotions and direct them towards a productive push to transform their school
