@@ -6,8 +6,8 @@ There’s a lot of talk lately about the need for intervention in urban schools 
 
 At Baldwin Hills Elementary and Gifted/High Ability Magnet School in the Los Angeles Unified School District (LAUSD), 99% of the student body is Black or Hispanic, and more than 70% of the students receive free- or reduced-price lunch. Compared to similar schools, though, Baldwin Hills is one of the best. The veteran staff has an average experience level of 15 years, including many award-winning educators. 
 
-But they were starting to feel frustrated. New leadership at the school was clashing with the culture of creativity they had come to love. A rule-driven ethos was stifling the ambition that had always driven Baldwin Hills teachers to go above and beyond for their students. 
+But in the fall of 2013, they were starting to feel frustrated. New leadership at the school was clashing with the culture of creativity they had come to love. A rule-driven adherence to district policy was stifling the ambition that had always driven Baldwin Hills teachers to go above and beyond for their students. 
 
-Frequently, once this frustration sets in, even the best teachers will decide to leave the school, or even the profession. Meteka Bullard did not want to see this happen to Baldwin Hills. Having taught for 13 years, 
+Frequently, once this frustration sets in, even the best teachers will decide to leave the school, or even the profession. Meteka Bullard did not want to see this happen to Baldwin Hills. Having taught for 13 years, she was still a junior member of the faculty. But she thought there was something she could do to preserve the school’s success, and possibly push it towards even greater heights. 
 
-Many teachers talked about leaving. 
+Meteka had just joined Future Is Now’s 
